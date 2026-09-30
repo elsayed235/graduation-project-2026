@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مشروع تخرج | Graduation Project — دفعة 2026</title>
+<meta name="description" content="نبني المشروع. نوثّقه. نشرحهولك. ونجهّزك للمناقشة — احجز استشارة مجانية لدفعة 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E">
+<!-- ===== Link preview (WhatsApp / Facebook / LinkedIn / X) ===== -->
+<!-- لو اسم الموقع اتغير: غيّر https://graduation-projects-2026.netlify.app في السطور دي بس -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="مشروع تخرج">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:title" content="مشروع تخرج | Graduation Project — دفعة 2026">
+<meta property="og:description" content="من أول فكرة لحد يوم المناقشة. احجز استشارة مجانية لدفعة 2026.">
+<meta property="og:url" content="https://graduation-projects-2026.netlify.app/">
+<meta property="og:image" content="https://graduation-projects-2026.netlify.app/og-image.jpg">
+<meta property="og:image:secure_url" content="https://graduation-projects-2026.netlify.app/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="مشروع تخرج — Graduation Project — دفعة 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="مشروع تخرج | Graduation Project — دفعة 2026">
+<meta name="twitter:description" content="من أول فكرة لحد يوم المناقشة. احجز استشارة مجانية لدفعة 2026.">
+<meta name="twitter:image" content="https://graduation-projects-2026.netlify.app/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+try{
+  var t=localStorage.getItem('gp-theme'); if(t) document.documentElement.setAttribute('data-theme',t);
+  if(localStorage.getItem('gp-anim')==='off') document.documentElement.classList.add('no-anim');
+}catch(e){}
+</script>
+<style>
+:root,[data-theme="dark"]{
+  --bg:#080B12;--surface:#111621;--text:#F8FAFC;--muted:#94A3B8;
+  --primary:#7C5CFC;--accent:#22D3EE;--success:#22C55E;
+  --line:rgba(148,163,184,.16);--grid:rgba(148,163,184,.07);
+  --glow1:rgba(124,92,252,.30);--glow2:rgba(34,211,238,.14);
+  --shadow:0 30px 80px -40px rgba(0,0,0,.8);
+}
+[data-theme="light"]{
+  --bg:#F6F7FB;--surface:#FFFFFF;--text:#0B1020;--muted:#4B5568;
+  --primary:#6246EA;--accent:#0E7490;--success:#15803D;
+  --line:rgba(11,16,32,.10);--grid:rgba(11,16,32,.05);
+  --glow1:rgba(98,70,234,.14);--glow2:rgba(14,116,144,.10);
+  --shadow:0 24px 60px -30px rgba(11,16,32,.22);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--text);overflow:hidden}
+body{font-family:"Inter","IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,Arial,sans-serif;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+button{font-family:inherit;color:inherit}
+a{color:inherit}
+.en{font-family:"Inter",system-ui,sans-serif;direction:ltr;unicode-bidi:isolate}
+.ico{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.flip{transform:scaleX(-1)}
+
+/* ---------- stage ---------- */
+.stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%);transform-origin:center;overflow:hidden;background:var(--bg)}
+.slide{position:absolute;inset:0;padding:136px 140px 104px;display:flex;flex-direction:column;background:var(--bg);isolation:isolate;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .5s ease,visibility .5s}
+.slide.active{opacity:1;visibility:visible}
+.bgfx{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.bgfx::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:96px 96px;-webkit-mask-image:radial-gradient(ellipse at 60% 35%,#000 15%,transparent 72%);mask-image:radial-gradient(ellipse at 60% 35%,#000 15%,transparent 72%)}
+.blob{position:absolute;border-radius:50%;filter:blur(130px)}
+.b1{width:900px;height:900px;background:var(--glow1);top:-380px;right:-220px}
+.b2{width:760px;height:760px;background:var(--glow2);bottom:-420px;left:-200px}
+.chrome{position:absolute;top:52px;right:140px;left:140px;display:flex;justify-content:space-between;align-items:center;font-size:22px;color:var(--muted)}
+.brand{display:flex;align-items:center;gap:14px;font-weight:600}
+.brand i{width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,var(--primary),var(--accent));transform:rotate(45deg)}
+.count{font-family:Inter;font-weight:600;letter-spacing:.08em;direction:ltr}
+.count b{color:var(--text)}
+.progress{position:absolute;bottom:0;right:0;height:5px;width:0;background:linear-gradient(to left,var(--primary),var(--accent));transition:width .6s cubic-bezier(.65,0,.2,1);z-index:10}
+
+/* ---------- motion ---------- */
+.slide.active .a{animation:rise .9s cubic-bezier(.2,.75,.2,1) both;animation-delay:calc(var(--i,0) * 90ms + 120ms)}
+@keyframes rise{from{opacity:0;transform:translateY(36px);filter:blur(14px)}to{opacity:1;transform:none;filter:blur(0)}}
+.grow{transform-origin:right center}
+.slide.active .grow{animation:grow 1.2s cubic-bezier(.65,0,.2,1) both;animation-delay:calc(var(--i,0) * 90ms + 200ms)}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.no-anim .slide.active .a,.no-anim .slide.active .grow,.no-anim .slide.active .hero-2026,.no-anim .slide.active .stamp,.no-anim .dot{animation:none!important}
+.no-anim .slide{transition:none}
+@media (prefers-reduced-motion:reduce){
+  .slide.active .a,.slide.active .grow,.slide.active .hero-2026,.slide.active .stamp,.dot{animation:none!important}
+  .slide,.progress{transition:none}
+}
+
+/* ---------- type ---------- */
+h1{font-size:164px;font-weight:700;line-height:1.05}
+h2{font-size:74px;font-weight:700;line-height:1.15}
+h3{font-weight:700}
+.sh{margin-bottom:44px}
+.shs{font-size:31px;color:var(--muted);margin-top:14px;line-height:1.5}
+.grad{background:linear-gradient(to left,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.muted{color:var(--muted)}
+
+/* ---------- shared blocks ---------- */
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:40px;box-shadow:var(--shadow)}
+.ic{display:inline-grid;place-items:center;width:68px;height:68px;border-radius:20px;background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary);font-size:34px;flex:none}
+.ic.acc{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.ic.ok{background:color-mix(in srgb,var(--success) 14%,transparent);color:var(--success)}
+.note{margin-top:auto;display:flex;align-items:center;gap:24px;padding:28px 40px;border-radius:24px;background:color-mix(in srgb,var(--primary) 9%,transparent);border:1px solid color-mix(in srgb,var(--primary) 28%,transparent);font-size:30px;font-weight:500;line-height:1.5}
+.note::before{content:"";width:6px;align-self:stretch;border-radius:3px;background:linear-gradient(var(--primary),var(--accent));flex:none}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.checks{list-style:none;display:grid;gap:14px}
+.checks li{position:relative;padding-inline-start:42px;font-size:25px;line-height:1.45}
+.checks li::before{content:"";position:absolute;right:0;top:4px;width:28px;height:28px;border-radius:9px;background:color-mix(in srgb,var(--success) 16%,transparent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322C55E' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4L18 8'/%3E%3C/svg%3E") center/18px no-repeat}
+[data-theme="light"] .checks li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2315803D' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4L18 8'/%3E%3C/svg%3E")}
+.checks.two{grid-template-columns:1fr 1fr;column-gap:32px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-block;padding:8px 16px;border-radius:12px;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 60%,transparent);font-size:20px;font-weight:500;color:var(--text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;height:84px;padding:0 42px;border-radius:22px;font-size:28px;font-weight:600;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .2s,box-shadow .2s,background .2s}
+.btn .ico{font-size:32px}
+.btn.primary{background:var(--primary);color:#fff;box-shadow:0 22px 50px -18px var(--primary)}
+.btn.ghost{background:color-mix(in srgb,var(--surface) 70%,transparent);border-color:var(--line);color:var(--text)}
+.btn:hover{transform:translateY(-3px)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+
+/* ---------- 01 hero ---------- */
+.s-hero{justify-content:center}
+.hero-content{position:relative;max-width:980px}
+.pill{display:inline-flex;align-items:center;gap:14px;padding:14px 26px;border-radius:999px;border:1px solid color-mix(in srgb,var(--success) 45%,transparent);background:color-mix(in srgb,var(--success) 12%,transparent);color:var(--success);font-size:24px;font-weight:600}
+.dot{width:12px;height:12px;border-radius:50%;background:currentColor;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,currentColor 55%,transparent)}100%{box-shadow:0 0 0 16px transparent}}
+.s-hero h1{margin-top:30px}
+.en-title{font-family:Inter;font-size:54px;font-weight:600;color:var(--muted);direction:ltr;text-align:right;letter-spacing:-.01em;margin-top:14px}
+.s-hero .sub{font-size:29px;color:var(--muted);margin-top:16px}
+.lead{font-size:40px;font-weight:600;margin-top:36px;line-height:1.4}
+.desc{font-size:27px;color:var(--muted);margin-top:14px;max-width:900px;line-height:1.6}
+.actions{display:flex;gap:20px;margin-top:44px}
+.hero-2026{position:absolute;left:96px;top:300px;z-index:-1;font-family:Inter;font-weight:900;font-size:280px;line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:3px var(--primary);opacity:.85;direction:ltr}
+.slide.active .hero-2026{animation:outline 1.8s cubic-bezier(.2,.75,.2,1) both .15s}
+@keyframes outline{from{opacity:0;letter-spacing:.12em;filter:blur(18px)}to{opacity:.85;letter-spacing:-.04em;filter:blur(0)}}
+.stamp{position:absolute;left:230px;top:590px;transform:rotate(-9deg);padding:20px 32px;border:3px solid var(--accent);border-radius:16px;color:var(--accent);font-size:26px;font-weight:700;background:color-mix(in srgb,var(--bg) 75%,transparent);box-shadow:inset 0 0 0 5px color-mix(in srgb,var(--accent) 16%,transparent);white-space:nowrap}
+.slide.active .stamp{animation:stamp .6s cubic-bezier(.3,1.5,.5,1) both 1.25s}
+@keyframes stamp{0%{opacity:0;transform:rotate(-26deg) scale(2.3)}60%{opacity:1}100%{opacity:1;transform:rotate(-9deg) scale(1)}}
+
+/* ---------- 02 problems ---------- */
+.prob-card{display:flex;flex-direction:column}
+.pc-head{display:flex;justify-content:space-between;align-items:center}
+.num{font-family:Inter;font-weight:800;font-size:24px;color:var(--primary);letter-spacing:.06em}
+.prob-card h3{font-size:42px;margin:24px 0 14px}
+.prob{font-size:26px;color:var(--muted);line-height:1.6}
+.sol{margin-top:auto;padding-top:26px;border-top:1px dashed var(--line)}
+.sol small{display:block;font-size:21px;color:var(--accent);font-weight:600;margin-bottom:8px}
+.sol p{font-size:27px;line-height:1.55;font-weight:500}
+.prob-card .sol{margin-top:28px}
+
+/* ---------- 03 deliverables ---------- */
+.dcard{padding:32px 34px}.dcard h3{font-size:32px;margin:18px 0 8px}
+.dcard p{font-size:22px;color:var(--muted);line-height:1.6}
+.wide{display:flex;flex-direction:column;gap:18px;padding:28px 36px}
+.wide-head{display:flex;gap:22px;align-items:center}
+.wide-head h3{font-size:34px}
+.wide-head p{font-size:23px;color:var(--muted);margin-top:4px}
+.s-deliv .grid2{margin-top:22px}.s-deliv .sh{margin-bottom:34px}.s-deliv .checks{gap:10px}.s-deliv .checks li{font-size:23px}
+
+/* ---------- 04 stack ---------- */
+.intro{font-size:28px;color:var(--muted);line-height:1.6;max-width:1400px;margin-top:-18px;margin-bottom:40px}
+.tech{font-family:Inter;font-weight:800;font-size:54px;letter-spacing:-.02em;direction:ltr;text-align:right}
+.tech-tag{display:inline-block;margin:14px 0 18px;padding:6px 14px;border-radius:10px;font-family:Inter;font-size:20px;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);direction:ltr}
+.tcard p{font-size:25px;line-height:1.6;color:var(--muted)}
+.tcard{border-top:4px solid var(--primary)}
+.features{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:34px}
+.flabel{font-size:24px;font-weight:600;white-space:nowrap}
+.s-stack .note{font-size:27px}
+
+/* ---------- 05 process ---------- */
+.steps{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:40px}
+.track{position:absolute;top:43px;right:45px;left:calc((100% - 112px) / 5 - 45px);height:4px;border-radius:2px;background:linear-gradient(to left,var(--primary),var(--accent),var(--success))}
+.track-bg{position:absolute;top:43px;right:45px;left:calc((100% - 112px) / 5 - 45px);height:4px;border-radius:2px;background:var(--line)}
+.circ{position:relative;width:90px;height:90px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:3px solid var(--primary);font-family:Inter;font-weight:800;font-size:34px}
+.step:nth-child(5) .circ{border-color:var(--accent)}
+.step:nth-child(7) .circ{border-color:var(--success);background:var(--success);color:#fff}
+.step h3{font-size:34px;margin:30px 0 12px}
+.step p{font-size:24px;color:var(--muted);line-height:1.6}
+.step .chips{margin-top:14px}
+.step .chip{font-size:19px;padding:6px 12px}
+.free{display:inline-block;margin-inline-start:8px;font-size:18px;font-weight:600;padding:3px 10px;border-radius:8px;vertical-align:middle;color:var(--success);background:color-mix(in srgb,var(--success) 14%,transparent)}
+
+/* ---------- 06 pricing ---------- */
+.sh-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.help{max-width:520px;padding:24px 30px;border-radius:22px;border:1px dashed color-mix(in srgb,var(--accent) 50%,transparent);font-size:23px;line-height:1.55;color:var(--muted)}
+.help b{display:block;color:var(--text);font-size:26px;margin-bottom:4px}
+.prices{align-items:stretch;margin-top:8px}
+.price{display:flex;flex-direction:column;padding:38px 40px 34px}
+.tier{font-family:Inter;font-weight:800;font-size:30px;letter-spacing:.14em;direction:ltr;text-align:right}
+.tagline{font-size:25px;color:var(--muted);margin:8px 0 26px}
+.price .checks{gap:11px}
+.price .checks li{font-size:24px}
+.pfoot{margin-top:auto;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:23px;color:var(--muted)}
+.pfoot b{font-size:25px;color:var(--text);font-weight:600}
+.price.hot{border:2px solid var(--primary);background:linear-gradient(180deg,color-mix(in srgb,var(--primary) 14%,var(--surface)),var(--surface) 60%);box-shadow:0 40px 90px -40px var(--primary)}
+.badge-hot{position:absolute;top:-22px;right:36px;padding:8px 20px;border-radius:999px;background:var(--primary);color:#fff;font-size:21px;font-weight:600}
+
+/* ---------- 07 payment ---------- */
+.paybar{display:flex;gap:8px;height:150px;margin-top:20px}
+.seg{display:flex;align-items:center;justify-content:center;gap:18px;border-radius:22px;color:#fff;font-size:30px;font-weight:600}
+.seg b{font-family:Inter;font-weight:800;font-size:58px}
+.seg.s1{flex:3;background:var(--primary)}
+.seg.s2{flex:4;background:color-mix(in srgb,var(--primary) 50%,var(--accent))}
+.seg.s3{flex:3;background:var(--accent)}
+[data-theme="dark"] .seg.s3{color:#06202A}
+.paycols{display:flex;gap:8px;margin-top:26px}
+.paycols > div{padding:0 8px}
+.paycols > div:nth-child(1){flex:3}.paycols > div:nth-child(2){flex:4}.paycols > div:nth-child(3){flex:3}
+.paycols h3{font-size:38px;margin-bottom:8px}
+.paycols p{font-size:28px;color:var(--muted);line-height:1.55}
+.guarantee{display:flex;gap:30px;align-items:center;margin-top:60px;padding:42px 46px;border-radius:26px;border:1px solid color-mix(in srgb,var(--success) 40%,transparent);background:color-mix(in srgb,var(--success) 9%,transparent)}
+.guarantee h3{font-size:38px;color:var(--success);margin-bottom:6px}
+.guarantee p{font-size:30px;line-height:1.5}
+.payline{margin-top:auto;font-size:29px;color:var(--muted)}
+
+/* ---------- 08 commitments ---------- */
+.commit{display:flex;gap:34px;align-items:flex-start;padding:52px 50px}
+.big-n{font-family:Inter;font-weight:800;font-size:84px;line-height:1;color:transparent;-webkit-text-stroke:2px var(--primary)}
+.commit h3{font-size:42px;margin-bottom:10px}
+.commit p{font-size:28px;color:var(--muted);line-height:1.6}
+
+/* ---------- 09 team ---------- */
+.stat{padding:44px 46px}
+.stat .big{font-family:Inter;font-weight:800;font-size:104px;line-height:1;direction:ltr;text-align:right;letter-spacing:-.02em}
+.stat h3{font-size:36px;margin:16px 0 8px}
+.stat p{font-size:26px;color:var(--muted);line-height:1.55}
+.subh{font-size:40px;font-weight:700;margin:64px 0 26px}
+.lnk{display:flex;align-items:center;gap:22px;padding:34px 36px;text-decoration:none;transition:border-color .2s,transform .2s}
+.lnk:hover{border-color:var(--primary);transform:translateY(-3px)}
+.lnk h4{font-size:32px;font-weight:700}
+.lnk p{font-size:24px;color:var(--muted);margin-top:4px;line-height:1.45}
+.lnk .go{margin-inline-start:auto;font-size:30px;color:var(--muted)}
+
+/* ---------- 10 faq ---------- */
+.faq{grid-template-columns:1fr 1fr;gap:22px}
+.q{padding:36px 40px}
+.q h3{font-size:32px;margin-bottom:10px}
+.q p{font-size:25px;color:var(--muted);line-height:1.6}
+.q.span{grid-column:1/-1}
+
+/* ---------- 11 cta ---------- */
+.cta-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;flex:1}
+.cta-main h2{font-size:104px}
+.cta-box{margin-top:34px;display:flex;gap:24px;align-items:flex-start}
+.cta-box h3{font-size:36px;margin-bottom:6px}
+.cta-box p{font-size:26px;color:var(--muted);line-height:1.55}
+.hint-s{font-size:23px;color:var(--muted);margin:34px 0 16px}
+.phones{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.phone{display:flex;align-items:center;gap:20px;padding:24px 28px;text-decoration:none;transition:border-color .2s,transform .2s}
+.phone:hover{border-color:var(--success);transform:translateY(-3px)}
+.phone b{display:block;font-size:34px;font-weight:700;letter-spacing:.02em}
+.phone small{font-size:21px;color:var(--success);font-weight:600}
+.chatcard{padding:0;overflow:hidden}
+.chat-top{display:flex;gap:18px;align-items:center;padding:24px 30px;border-bottom:1px solid var(--line)}
+.avatar{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;font-size:28px;font-weight:700}
+.chat-top b{display:block;font-size:26px}
+.chat-top small{font-size:20px;color:var(--muted)}
+.chat-body{padding:40px 30px 44px;background-image:radial-gradient(var(--grid) 2px,transparent 2px);background-size:26px 26px}
+.bubble{max-width:88%;margin-inline-start:auto;padding:22px 26px 16px;border-radius:24px 24px 24px 6px;background:color-mix(in srgb,var(--success) 18%,var(--surface));border:1px solid color-mix(in srgb,var(--success) 30%,transparent);font-size:27px;line-height:1.55}
+.bubble .meta{display:block;text-align:left;font-size:17px;color:var(--muted);margin-top:6px}
+.seats{margin-top:26px;font-size:25px;color:var(--muted);text-align:center}
+.seats b{color:var(--text)}
+.cta-side .btn{width:100%;margin-top:22px}
+
+/* ---------- 12 closing ---------- */
+.s-close{justify-content:center;align-items:center;text-align:center}
+.close-2026{position:absolute;inset:auto 0 -230px 0;z-index:-1;font-family:Inter;font-weight:900;font-size:520px;line-height:1;color:transparent;-webkit-text-stroke:2px color-mix(in srgb,var(--primary) 40%,transparent);letter-spacing:-.04em;direction:ltr}
+.s-close blockquote{font-size:96px;font-weight:700;line-height:1.3}
+.s-close .shs{font-size:36px;margin-top:40px}
+.close-phones{margin-top:44px;display:flex;gap:18px;align-items:center;justify-content:center;font-size:30px;color:var(--muted)}
+.close-phones a{font-size:36px;font-weight:700;color:var(--text);text-decoration:none;padding:12px 26px;border-radius:18px;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 70%,transparent)}
+.close-phones a:hover{border-color:var(--success)}
+
+/* ---------- controls ---------- */
+.corner{position:fixed;left:0;bottom:0;width:230px;height:140px;display:flex;align-items:flex-end;gap:10px;padding:0 0 22px 22px;z-index:50}
+.corner button,.navbtns button{width:50px;height:50px;border-radius:14px;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 85%,transparent);backdrop-filter:blur(8px);display:grid;place-items:center;cursor:pointer;font-size:22px}
+.corner button{opacity:0;transform:translateY(8px);transition:opacity .25s,transform .25s}
+.corner:hover button,.corner:focus-within button,.corner.open button{opacity:1;transform:none}
+.navbtns{position:fixed;right:22px;bottom:22px;display:flex;gap:10px;z-index:50;opacity:.35;transition:opacity .25s}
+.navbtns:hover{opacity:1}
+@media (hover:none){.corner button{opacity:.6;transform:none}.navbtns{opacity:.7}}
+.tweaks{position:fixed;left:22px;bottom:86px;width:320px;padding:22px;border-radius:20px;border:1px solid var(--line);background:var(--surface);box-shadow:0 30px 70px -20px rgba(0,0,0,.5);z-index:60;font-size:16px}
+.tweaks[hidden]{display:none}
+.tweaks h4{font-family:Inter;font-size:16px;font-weight:700;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center}
+.tweaks h4 button{background:none;border:0;cursor:pointer;font-size:20px;color:var(--muted)}
+.trow{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.segc{display:flex;padding:3px;border-radius:10px;background:color-mix(in srgb,var(--muted) 14%,transparent)}
+.segc button{border:0;background:none;padding:6px 14px;border-radius:8px;cursor:pointer;font-family:Inter;font-size:14px;font-weight:600}
+.segc button[aria-pressed="true"]{background:var(--primary);color:#fff}
+.sw{position:relative;width:48px;height:28px;display:inline-block}
+.sw input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.sw i{position:absolute;inset:0;border-radius:999px;background:color-mix(in srgb,var(--muted) 30%,transparent);transition:background .2s;pointer-events:none}
+.sw i::after{content:"";position:absolute;top:3px;right:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:right .2s}
+.sw input:checked + i{background:var(--primary)}
+.sw input:checked + i::after{right:23px}
+.sw input:focus-visible + i{outline:3px solid var(--accent);outline-offset:2px}
+.tbtn{width:100%;margin-top:12px;padding:10px;border-radius:10px;border:1px solid var(--line);background:none;cursor:pointer;font-size:15px;font-weight:600}
+.thint{margin-top:12px;font-size:13px;color:var(--muted);line-height:1.6}
+
+/* ---------- print ---------- */
+@page{size:1920px 1080px;margin:0}
+@media print{
+  html,body{overflow:visible;height:auto}
+  .stage{position:static;transform:none!important;width:1920px;height:auto;overflow:visible}
+  .slide{position:relative;opacity:1!important;visibility:visible!important;width:1920px;height:1080px;break-after:page;page-break-after:always;transition:none}
+  .slide *{animation:none!important}
+  .corner,.tweaks,.navbtns,.progress{display:none!important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18M16 15h2"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-slides" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8M10 8.5v4l3.5-2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 21l1.4-4.5A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.5 10.5h7M8.5 14h4.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.6-3.4 8.3-8 9-4.6-.7-8-4.4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M17 17L7 7M16 7H7v9"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+</svg>
+
+<main class="stage" id="stage">
+
+<!-- 01 Hero -->
+<section class="slide s-hero" data-name="Hero">
+  <div class="hero-2026" aria-hidden="true">2026</div>
+  <div class="stamp" aria-hidden="true">مشروع تخرج ✦ دفعة 2026 ✦ من الفكرة للمناقشة</div>
+  <div class="hero-content">
+    <div class="pill a"><span class="dot"></span>الحجز مفتوح لدفعة 2026</div>
+    <h1 class="a">مشروع تخرج</h1>
+    <div class="en-title a">Graduation Project</div>
+    <p class="sub a">من أول فكرة لحد يوم المناقشة — دفعة 2026</p>
+    <p class="lead a">نبني المشروع. نوثّقه. نشرحهولك. ونجهّزك للمناقشة.</p>
+    <p class="desc a">مشروع تخرج كامل، منظم، قابل للتسليم، ومعاه كل ما تحتاجه عشان تدخل المناقشة وأنت فاهم مشروعك فعلًا.</p>
+    <div class="actions a">
+      <a class="btn primary" href="https://wa.me/201016753299?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>احجز استشارة مجانية — واتساب</a>
+      <button class="btn ghost" data-goto="2">شوف الخدمة<svg class="ico flip"><use href="#i-arrow"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Worries -->
+<section class="slide" data-name="Worries">
+  <header class="sh">
+    <h2 class="a">عارفين إيه اللي بيقلقك؟</h2>
+    <p class="shs a">3 حاجات بيخاف منها أي تيم مشروع تخرج</p>
+  </header>
+  <div class="grid3">
+    <article class="card prob-card a">
+      <div class="pc-head"><span class="ic"><svg class="ico"><use href="#i-clock"/></svg></span><span class="num">01</span></div>
+      <h3>الميعاد</h3>
+      <p class="prob">الشغل يتأخر، وميعاد التسليم يقرّب والدكتور مستني.</p>
+      <div class="sol"><small>وإحنا بنحلها إزاي؟</small><p>خطة واضحة + تحديثات أسبوعية + مواعيد تسليم محددة.</p></div>
+    </article>
+    <article class="card prob-card a">
+      <div class="pc-head"><span class="ic"><svg class="ico"><use href="#i-wallet"/></svg></span><span class="num">02</span></div>
+      <h3>الفلوس</h3>
+      <p class="prob">تدفع مقدمًا وبعدها التواصل يختفي والمشروع لسه ماخلصش.</p>
+      <div class="sol"><small>وإحنا بنحلها إزاي؟</small><p>دفع على مراحل مرتبطة بمراحل واضحة من التنفيذ.</p></div>
+    </article>
+    <article class="card prob-card a">
+      <div class="pc-head"><span class="ic"><svg class="ico"><use href="#i-mic"/></svg></span><span class="num">03</span></div>
+      <h3>المناقشة</h3>
+      <p class="prob">المشروع يشتغل، لكن التيم مش فاهمه أو مش عارف يجاوب اللجنة.</p>
+      <div class="sol"><small>وإحنا بنحلها إزاي؟</small><p>جلسات شرح + تجهيز للبريزنتيشن + بروفة مناقشة وبنك أسئلة.</p></div>
+    </article>
+  </div>
+  <div class="note a">الخدمة مش مجرد تنفيذ كود؛ إحنا بنقلل مخاطر المشروع من أول يوم لحد المناقشة.</div>
+</section>
+
+<!-- 03 Deliverables -->
+<section class="slide s-deliv" data-name="Deliverables">
+  <header class="sh">
+    <h2 class="a">بتستلم إيه؟</h2>
+    <p class="shs a">مش كود وخلاص — مشروع كامل جاهز للتسليم والمناقشة</p>
+  </header>
+  <div class="grid4">
+    <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-phone"/></svg></span><h3>التطبيق</h3><p>تطبيق <span class="en">Mobile</span> أو <span class="en">Web</span> شغال ومتجرّب، ومعاه الـ <span class="en">Backend</span> وقاعدة البيانات حسب احتياج المشروع.</p></article>
+    <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-code"/></svg></span><h3>السورس كود</h3><p>الكود على <span class="en">GitHub</span> باسم التيم، منظم، ومشروح، ومعاه خطوات التشغيل.</p></article>
+    <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-doc"/></svg></span><h3>التوثيق</h3><p><span class="en">PDF Documentation</span> من المقدمة للخاتمة، مع الـ <span class="en">Diagrams</span> وعلى قالب الكلية إذا كان متاحًا.</p></article>
+    <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-slides"/></svg></span><h3>البريزنتيشن</h3><p>عرض المناقشة جاهز ومنظم، ومعاه <span class="en">Demo Video</span> احتياطي.</p></article>
+  </div>
+  <div class="grid2">
+    <article class="card wide a">
+      <div class="wide-head"><span class="ic acc"><svg class="ico"><use href="#i-chat"/></svg></span><div><h3>جلسات شرح</h3><p>مش هنسلّمك المشروع ونقولك: «اتفضل افهمه». هنشرح:</p></div></div>
+      <ul class="checks two"><li>المشروع اتبنى إزاي.</li><li>ليه اخترنا كل <span class="en">Technology</span>.</li><li>كل عضو في التيم مسؤول عن إيه.</li><li>الجزء اللي كل واحد محتاج يعرفه في المناقشة.</li></ul>
+    </article>
+    <article class="card wide a">
+      <div class="wide-head"><span class="ic acc"><svg class="ico"><use href="#i-mic"/></svg></span><div><h3>بروفة مناقشة</h3><p>تدريب عملي على:</p></div></div>
+      <ul class="checks two"><li>الأسئلة المتوقعة.</li><li>طريقة تقديم المشروع.</li><li>الأسئلة التقنية.</li><li>النقاط اللي اللجنة ممكن تتوقف عندها.</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- 04 Stack -->
+<section class="slide s-stack" data-name="Stack">
+  <header class="sh">
+    <h2 class="a">بنشتغل بإيه؟</h2>
+    <p class="shs a"><span class="en">Technology Stack</span> حسب متطلبات مشروعك</p>
+  </header>
+  <p class="intro a">مش بنفرض <span class="en">Technology</span> لمجرد إنها مشهورة. الدكتور طالب إيه؟ المشروع محتاج إيه؟ الوقت المتاح قد إيه؟ وبناءً عليهم بنختار الأنسب.</p>
+  <div class="grid3">
+    <article class="card tcard a"><div class="tech">Flutter</div><span class="tech-tag">Android + iOS</span><p><span class="en">Android + iOS</span> من <span class="en">Codebase</span> واحد. مناسب جدًا لمشاريع الـ<span class="en">Mobile</span> اللي محتاجة تنفيذ سريع وواجهة حديثة.</p></article>
+    <article class="card tcard a"><div class="tech">Web</div><span class="tech-tag">JavaScript + React + Node.js</span><p>مناسب للـ<span class="en">Web Apps</span>، <span class="en">Dashboards</span>، وأنظمة الإدارة.</p></article>
+    <article class="card tcard a"><div class="tech">Android Native</div><span class="tech-tag">Java</span><p>للمشاريع اللي الدكتور أو متطلبات الكلية فارضة <span class="en">Native Android</span>.</p></article>
+  </div>
+  <div class="features a">
+    <span class="flabel"><span class="en">Features</span> إضافية حسب المشروع:</span>
+    <div class="chips en" style="direction:rtl">
+      <span class="chip">Artificial Intelligence</span><span class="chip">Maps &amp; Tracking</span><span class="chip">Online Payments</span><span class="chip">Push Notifications</span><span class="chip">Admin Dashboard</span><span class="chip">Backend &amp; Database</span>
+    </div>
+  </div>
+  <div class="note a"><span>لو عندكم <span class="en">Technology</span> أو <span class="en">Language</span> مفروضة من الدكتور، قولولنا من أول الاستشارة.</span></div>
+</section>
+
+<!-- 05 Process -->
+<section class="slide" data-name="Process">
+  <header class="sh">
+    <h2 class="a">من أول رسالة ليوم المناقشة</h2>
+    <p class="shs a">5 خطوات واضحة — مفيش مفاجآت</p>
+  </header>
+  <div class="steps">
+    <div class="track-bg"></div>
+    <div class="track grow"></div>
+    <div class="step a"><div class="circ">1</div><h3>تكلمنا</h3><p>ابعت لنا على واتساب واحكيلنا:</p><div class="chips"><span class="chip">فكرة المشروع</span><span class="chip">عدد أفراد التيم</span><span class="chip">متطلبات الدكتور</span><span class="chip">موعد التسليم</span></div></div>
+    <div class="step a"><div class="circ">2</div><h3>استشارة مجانية</h3><p><span class="en">15</span> دقيقة نفهم فيها المشروع، ونحدد الـ<span class="en">Features</span> الأساسية، ونقترح الشكل المناسب للتنفيذ.</p></div>
+    <div class="step a"><div class="circ">3</div><h3>عرض مكتوب</h3><p>قبل أي دفع، تستلم عرض واضح يشمل:</p><div class="chips"><span class="chip">الـ<span class="en">Features</span></span><span class="chip">مراحل التنفيذ</span><span class="chip">مواعيد التسليم</span><span class="chip">السعر</span><span class="chip">ما يشمله كل <span class="en">Package</span></span></div></div>
+    <div class="step a"><div class="circ">4</div><h3>التنفيذ</h3><p>الشغل بيتبني على مراحل، ومع كل أسبوع يوصلكم <span class="en">Update</span> بصور أو فيديو قصير عشان تفضلوا عارفين المشروع وصل لفين.</p></div>
+    <div class="step a"><div class="circ">5</div><h3>التسليم والشرح</h3><p>تستلموا المشروع كاملًا، ونشرحلكم الأجزاء المهمة، ونجهزكم للمناقشة حسب الباقة المختارة.</p></div>
+  </div>
+  <div class="note a">من أول رسالة لحد يوم المناقشة: أنت عارف إحنا فين، وإيه اللي جاي.</div>
+</section>
+
+<!-- 06 Packages -->
+<section class="slide" data-name="Packages">
+  <div class="sh sh-row">
+    <header>
+      <h2 class="a">اختار الباقة المناسبة لتيمك</h2>
+      <p class="shs a">السعر للتيم كله — مش للفرد</p>
+    </header>
+    <div class="help a"><b>مش عارف تختار؟</b>الاستشارة المجانية نحدد فيها احتياجكم قبل ما تختاروا الباقة.</div>
+  </div>
+  <div class="grid3 prices">
+    <article class="card price a">
+      <div class="tier">BASIC</div>
+      <p class="tagline">لو محتاجين التطبيق فقط</p>
+      <ul class="checks"><li>التطبيق + السورس كود</li><li>طريقة التشغيل</li><li>جلسة شرح واحدة</li><li>جولة تعديل واحدة</li></ul>
+      <div class="pfoot">السعر<b>يُعلن قريبًا</b></div>
+    </article>
+    <article class="card price hot a">
+      <span class="badge-hot">★ الأكثر طلبًا</span>
+      <div class="tier">COMPLETE</div>
+      <p class="tagline">المشروع كامل للتسليم</p>
+      <ul class="checks"><li>كل ما في <span class="en">Basic</span></li><li><span class="en">Documentation PDF</span> كامل</li><li><span class="en">Presentation</span> للمناقشة</li><li>جلستان شرح</li><li>جولتا تعديل</li></ul>
+      <div class="pfoot">السعر<b>يُعلن قريبًا</b></div>
+    </article>
+    <article class="card price a">
+      <div class="tier">UNTIL DEFENSE</div>
+      <p class="tagline">من أول المشروع لحد المناقشة</p>
+      <ul class="checks"><li>كل ما في <span class="en">Complete</span></li><li><span class="en">Demo Video</span></li><li>تعديلات الدكتور لحد المناقشة</li><li>بروفة مناقشة</li><li>بنك أسئلة متوقعة</li><li>أولوية في الرد</li></ul>
+      <div class="pfoot">السعر<b>يُعلن قريبًا</b></div>
+    </article>
+  </div>
+</section>
+
+<!-- 07 Payment -->
+<section class="slide" data-name="Payment">
+  <header class="sh">
+    <h2 class="a">بتدفع على مراحل</h2>
+    <p class="shs a">مش هتدفع كل المبلغ قبل ما تشوف الشغل</p>
+  </header>
+  <div class="paybar grow" role="img" aria-label="30% الحجز، 40% الديمو، 30% التسليم">
+    <div class="seg s1"><b>30%</b>الحجز</div>
+    <div class="seg s2"><b>40%</b>الديمو</div>
+    <div class="seg s3"><b>30%</b>التسليم</div>
+  </div>
+  <div class="paycols">
+    <div class="a"><h3>الحجز</h3><p>بعد استلام العرض المكتوب والموافقة عليه.</p></div>
+    <div class="a"><h3>الديمو</h3><p>بعد استلام وتجربة نسخة شغالة من المشروع.</p></div>
+    <div class="a"><h3>التسليم</h3><p>عند اكتمال التسليم النهائي.</p></div>
+  </div>
+  <div class="guarantee a">
+    <span class="ic ok" style="width:84px;height:84px;font-size:44px"><svg class="ico"><use href="#i-shield"/></svg></span>
+    <div><h3>ضمان الموعد</h3><p>لو ما سلّمناش الديمو في الموعد المتفق عليه، العربون يرجع لكم كاملًا.</p></div>
+  </div>
+  <p class="payline a">كل مرحلة لها <span class="en">Deliverable</span> واضح. وكل دفعة مرتبطة بمرحلة فعلية من الشغل.</p>
+</section>
+
+<!-- 08 Commitments -->
+<section class="slide" data-name="Commitments">
+  <header class="sh">
+    <h2 class="a">مشروعك ليك</h2>
+    <p class="shs a">4 التزامات أساسية مع كل <span class="en">Team</span></p>
+  </header>
+  <div class="grid2">
+    <article class="card commit a"><span class="big-n">01</span><div><h3>مش بيتكرر</h3><p>مش بننفذ نفس المشروع لتيمين في نفس الجامعة.</p></div></article>
+    <article class="card commit a"><span class="big-n">02</span><div><h3>مش بيتنشر</h3><p>مشروعكم مش هيظهر في أي مكان بدون إذنكم.</p></div></article>
+    <article class="card commit a"><span class="big-n">03</span><div><h3>الكود ملككم</h3><p>بعد سداد آخر دفعة، السورس كود الخاص بالمشروع ملككم بالكامل وفقًا للاتفاق.</p></div></article>
+    <article class="card commit a"><span class="big-n">04</span><div><h3>عدد محدود</h3><p>بنقبل عدد محدود من التيمز كل ترم، عشان نقدر نحافظ على جودة التنفيذ والمتابعة.</p></div></article>
+  </div>
+  <div class="note a">الهدف مش إننا ننجز أكبر عدد مشاريع؛ الهدف إن كل مشروع يتسلّم بالشكل اللي اتفقنا عليه.</div>
+</section>
+
+<!-- 09 Team -->
+<section class="slide" data-name="Team">
+  <header class="sh">
+    <h2 class="a">مين هيشتغل على مشروعك؟</h2>
+    <p class="shs a">فريق بيبني <span class="en">Software</span> — مش مجرد تجميع أكواد</p>
+  </header>
+  <div class="grid3">
+    <article class="card stat a"><div class="big grad">+4</div><h3>سنوات خبرة</h3><p>خبرة في بناء وتطوير التطبيقات والأنظمة.</p></article>
+    <article class="card stat a"><div class="big grad">QA</div><h3>على كل مشروع</h3><p>كل مشروع بيتراجع ويتختبر قبل التسليم.</p></article>
+    <article class="card stat a"><div class="big grad">1:1</div><h3>متابعة وتواصل</h3><p>تحديثات منتظمة عشان التيم يفضل عارف حالة المشروع.</p></article>
+  </div>
+  <h3 class="subh a">شوف شغلنا بنفسك</h3>
+  <div class="grid3">
+    <a class="card lnk a" href="https://github.com/elsayed235?tab=overview&amp;from=2026-09-01&amp;to=2026-09-29" target="_blank" rel="noopener"><span class="ic"><svg class="ico"><use href="#i-code"/></svg></span><div><h4 class="en" style="text-align:right">GitHub</h4><p>شوف الأكواد والمشاريع اللي اتعملت فعلًا.</p></div><svg class="ico go"><use href="#i-out"/></svg></a>
+    <a class="card lnk a" href="https://www.linkedin.com/in/elsayed-abd-elmonem-arab" target="_blank" rel="noopener"><span class="ic acc"><svg class="ico"><use href="#i-user"/></svg></span><div><h4 class="en" style="text-align:right">LinkedIn</h4><p>الخبرة، الشغل، والتوصيات.</p></div><svg class="ico go"><use href="#i-out"/></svg></a>
+    <a class="card lnk a" href="https://wa.me/201016753299?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" rel="noopener"><span class="ic ok"><svg class="ico"><use href="#i-chat"/></svg></span><div><h4>واتساب</h4><p>اسألنا مباشرة قبل ما تقرر.</p></div><svg class="ico go"><use href="#i-out"/></svg></a>
+  </div>
+</section>
+
+<!-- 10 FAQ -->
+<section class="slide" data-name="FAQ">
+  <header class="sh">
+    <h2 class="a">أسئلة بتتسأل كتير</h2>
+  </header>
+  <div class="grid2 faq">
+    <article class="card q a"><h3>«إحنا لسه ماعندناش فكرة. ينفع؟»</h3><p>أيوه. ده جزء من الاستشارة. بنفهم اهتماماتكم ومتطلبات الدكتور، ونقترح أفكار قابلة للتنفيذ حسب الوقت والـ<span class="en">Technology</span> المطلوبة.</p></article>
+    <article class="card q a"><h3>«لو الدكتور طلب تعديل في النص؟»</h3><p>كل باقة فيها جولات تعديل محددة، وباقة <span class="en">Until Defense</span> تشمل تعديلات الدكتور حتى يوم المناقشة ضمن نطاق المشروع المتفق عليه.</p></article>
+    <article class="card q a"><h3>«هفهم المشروع فعلًا؟»</h3><p>دي مش إضافة جانبية — دي جزء أساسي من الخدمة. بنشرح لكل عضو الجزء المسؤول عنه، وليه اتعمل بالطريقة دي، ونعمل بروفة مناقشة بأسئلة تقنية متوقعة.</p></article>
+    <article class="card q a"><h3>«هعرف الشغل ماشي فين؟»</h3><p>أيوه. بيوصلكم تحديث أسبوعي بصور أو فيديو قصير على جروب التيم.</p></article>
+    <article class="card q span a"><h3>«الدكتور فارض لغة أو <span class="en">Technology</span> معينة؟»</h3><p>قولولنا في الاستشارة. بنشتغل حاليًا على: <span class="en">Flutter · Web · Android Native</span>. ولو طلبكم خارج النطاق ده، هنقولكم بصراحة قبل ما نبدأ.</p></article>
+  </div>
+</section>
+
+<!-- 11 CTA -->
+<section class="slide" data-name="Start">
+  <div class="cta-grid">
+    <div class="cta-main">
+      <h2 class="a">يلا نبدأ مشروعك</h2>
+      <p class="shs a">عندك فكرة؟ عندك متطلبات الدكتور؟ حتى لو لسه مش عارف تبدأ؟</p>
+      <div class="cta-box a"><span class="ic ok"><svg class="ico"><use href="#i-chat"/></svg></span><div><h3>ابعت لنا على واتساب</h3><p>نحدد استشارة مجانية لمدة <span class="en">15</span> دقيقة، نفهم فيها فكرتك ونقولك إيه المناسب لمشروعك.</p></div></div>
+      <p class="hint-s a">الضغط على أي رقم بيفتح شات واتساب والرسالة مكتوبة جاهزة:</p>
+      <div class="phones">
+        <a class="card phone a" href="https://wa.me/201016753299?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" rel="noopener"><span class="ic ok"><svg class="ico"><use href="#i-phone"/></svg></span><span><b class="en">01016753299</b><small>ابدأ المحادثة</small></span></a>
+        <a class="card phone a" href="https://wa.me/201066782355?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" rel="noopener"><span class="ic ok"><svg class="ico"><use href="#i-phone"/></svg></span><span><b class="en">01066782355</b><small>ابدأ المحادثة</small></span></a>
+      </div>
+    </div>
+    <div class="cta-side">
+      <div class="card chatcard a">
+        <div class="chat-top"><span class="avatar">م</span><div><b>مشروع تخرج</b><small>الرسالة الجاهزة — بتتكتب لك تلقائيًا</small></div></div>
+        <div class="chat-body"><div class="bubble">السلام عليكم، عايز أعرف تفاصيل خدمة مشروع تخرج.<span class="meta en">✓✓</span></div></div>
+      </div>
+      <p class="seats a"><b>دفعة 2026</b> — الأماكن محدودة هذا الترم.</p>
+      <a class="btn primary a" href="https://wa.me/201016753299?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" rel="noopener">ابدأ الاستشارة المجانية<svg class="ico flip"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 12 Closing -->
+<section class="slide s-close" data-name="Closing">
+  <div class="close-2026" aria-hidden="true">2026</div>
+  <blockquote class="a">«مش لازم تكون عارف تبدأ منين.<br>إحنا نبدأ معاك من أول فكرة.»</blockquote>
+  <p class="shs a">احجز الاستشارة المجانية لدفعة 2026.</p>
+  <div class="close-phones a">واتساب:
+    <a class="en" href="https://wa.me/201016753299?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" rel="noopener">01016753299</a>
+    <a class="en" href="https://wa.me/201066782355?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" rel="noopener">01066782355</a>
+  </div>
+</section>
+
+<div class="progress" id="progress"></div>
+</main>
+
+<!-- hidden corner controls (bottom-left) -->
+<div class="corner" id="corner">
+  <button id="themeBtn" type="button" title="تغيير الثيم (T)" aria-label="تغيير الثيم"><svg class="ico"><use href="#i-sun"/></svg></button>
+  <button id="tweaksBtn" type="button" title="Tweaks" aria-label="Tweaks" aria-expanded="false"><svg class="ico"><use href="#i-sliders"/></svg></button>
+</div>
+<div class="tweaks" id="tweaks" hidden>
+  <h4>Tweaks <button type="button" id="tweaksClose" aria-label="إغلاق">×</button></h4>
+  <div class="trow"><span>الثيم</span><div class="segc"><button type="button" data-set-theme="dark" aria-pressed="false">Dark</button><button type="button" data-set-theme="light" aria-pressed="false">Light</button></div></div>
+  <div class="trow"><span>الأنيميشن</span><label class="sw"><input type="checkbox" id="animToggle" checked aria-label="تشغيل الأنيميشن"><i></i></label></div>
+  <button type="button" class="tbtn" id="printBtn">طباعة / حفظ كـ PDF</button>
+  <p class="thint">← التالي · → السابق · <b class="en">T</b> الثيم · <b class="en">F</b> ملء الشاشة</p>
+</div>
+<nav class="navbtns" aria-label="التنقل">
+  <button type="button" id="prevBtn" aria-label="السابق"><svg class="ico"><use href="#i-prev"/></svg></button>
+  <button type="button" id="nextBtn" aria-label="التالي"><svg class="ico"><use href="#i-next"/></svg></button>
+</nav>
+
+<script>
+(function(){
+  var root=document.documentElement, stage=document.getElementById('stage');
+  var slides=[].slice.call(document.querySelectorAll('.slide')), total=slides.length, cur=0;
+  var pad=function(n){return (n<10?'0':'')+n};
+
+  // per-slide background + chrome + animation order
+  slides.forEach(function(s,idx){
+    var fx=document.createElement('div'); fx.className='bgfx'; fx.setAttribute('aria-hidden','true');
+    fx.innerHTML='<i class="blob b1"></i><i class="blob b2"></i>';
+    s.insertBefore(fx,s.firstChild);
+    var ch=document.createElement('div'); ch.className='chrome'; ch.setAttribute('aria-hidden','true');
+    ch.innerHTML='<div class="brand"><i></i>مشروع تخرج · دفعة 2026</div><div class="count"><b>'+pad(idx+1)+'</b> / '+pad(total)+'</div>';
+    s.appendChild(ch);
+    s.querySelectorAll('.a,.grow').forEach(function(el,i){el.style.setProperty('--i',i)});
+  });
+
+  function fit(){
+    var sc=Math.min(window.innerWidth/1920,window.innerHeight/1080);
+    stage.style.transform='translate(-50%,-50%) scale('+sc+')';
+  }
+  window.addEventListener('resize',fit); fit();
+
+  function go(n){
+    n=Math.max(0,Math.min(total-1,n));
+    slides[cur].classList.remove('active');
+    cur=n; slides[cur].classList.add('active');
+    slides.forEach(function(s,i){s.setAttribute('aria-hidden',i===cur?'false':'true')});
+    document.getElementById('progress').style.width=((cur+1)/total*100)+'%';
+    try{history.replaceState(null,'','#'+(cur+1))}catch(e){}
+  }
+  var h=parseInt((location.hash||'').slice(1),10);
+  go(isNaN(h)?0:h-1);
+  window.addEventListener('hashchange',function(){var n=parseInt((location.hash||'').slice(1),10);if(!isNaN(n)&&n-1!==cur)go(n-1)});
+
+  document.querySelectorAll('[data-goto]').forEach(function(b){
+    b.addEventListener('click',function(){go(parseInt(b.getAttribute('data-goto'),10)-1)});
+  });
+  document.getElementById('nextBtn').onclick=function(){go(cur+1)};
+  document.getElementById('prevBtn').onclick=function(){go(cur-1)};
+
+  // theme
+  function setTheme(t){
+    root.setAttribute('data-theme',t);
+    try{localStorage.setItem('gp-theme',t)}catch(e){}
+    document.querySelector('#themeBtn use').setAttribute('href',t==='dark'?'#i-sun':'#i-moon');
+    document.querySelectorAll('[data-set-theme]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set-theme')===t)});
+  }
+  function toggleTheme(){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark')}
+  setTheme(root.getAttribute('data-theme')||'dark');
+  document.getElementById('themeBtn').onclick=toggleTheme;
+  document.querySelectorAll('[data-set-theme]').forEach(function(b){b.onclick=function(){setTheme(b.getAttribute('data-set-theme'))}});
+
+  // animations
+  var animToggle=document.getElementById('animToggle');
+  animToggle.checked=!root.classList.contains('no-anim');
+  animToggle.onchange=function(){
+    root.classList.toggle('no-anim',!animToggle.checked);
+    try{localStorage.setItem('gp-anim',animToggle.checked?'on':'off')}catch(e){}
+    if(animToggle.checked){var s=slides[cur];s.classList.remove('active');void s.offsetWidth;s.classList.add('active')}
+  };
+
+  // tweaks panel
+  var tw=document.getElementById('tweaks'), twBtn=document.getElementById('tweaksBtn'), corner=document.getElementById('corner');
+  function openTweaks(o){tw.hidden=!o;twBtn.setAttribute('aria-expanded',o);corner.classList.toggle('open',o)}
+  twBtn.onclick=function(){openTweaks(tw.hidden)};
+  document.getElementById('tweaksClose').onclick=function(){openTweaks(false)};
+  document.getElementById('printBtn').onclick=function(){openTweaks(false);window.print()};
+
+  function fullscreen(){
+    if(document.fullscreenElement){document.exitFullscreen&&document.exitFullscreen()}
+    else if(root.requestFullscreen){root.requestFullscreen().catch(function(){})}
+  }
+
+  document.addEventListener('keydown',function(e){
+    if(e.target.closest&&e.target.closest('input,textarea,select'))return;
+    if(e.ctrlKey||e.metaKey||e.altKey)return;
+    var k=e.key, c=e.code;
+    if(k==='ArrowLeft'||k==='ArrowDown'||k==='PageDown'||c==='Space'){e.preventDefault();go(cur+1)}
+    else if(k==='ArrowRight'||k==='ArrowUp'||k==='PageUp'){e.preventDefault();go(cur-1)}
+    else if(k==='Home'){go(0)}
+    else if(k==='End'){go(total-1)}
+    else if(c==='KeyT'){toggleTheme()}
+    else if(c==='KeyF'){fullscreen()}
+    else if(k==='Escape'){openTweaks(false)}
+  });
+
+  // swipe (RTL: swipe right = next)
+  var sx=null,sy=null;
+  document.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(sx===null)return;
+    var dx=e.changedTouches[0].clientX-sx, dy=e.changedTouches[0].clientY-sy;
+    if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){go(dx>0?cur+1:cur-1)}
+    sx=null;
+  },{passive:true});
+})();
+</script>
+</body>
+</html>

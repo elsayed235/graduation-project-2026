@@ -169,6 +169,38 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .flabel{font-size:24px;font-weight:600;white-space:nowrap}
 .s-stack .note{font-size:27px}
 
+
+/* ---------- 04 system ---------- */
+.s-stack .sh{margin-bottom:30px}
+.sys{display:grid;grid-template-columns:repeat(4,1fr);column-gap:26px}
+.layer{display:flex;flex-direction:column;padding:30px 30px 26px}
+.layer h3{font-size:30px;margin:18px 0 8px}
+.layer p{font-size:21px;line-height:1.55;color:var(--muted);margin-bottom:18px}
+.layer .chips{margin-top:auto;gap:8px}
+.layer .chip{font-size:17px;padding:5px 12px;border-radius:10px}
+.links{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);column-gap:26px;height:30px}
+.links i{justify-self:center;width:3px;height:100%;background:linear-gradient(var(--line),var(--accent))}
+.core{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:30px;padding:24px 34px;border-radius:24px;border:1.5px solid color-mix(in srgb,var(--accent) 45%,transparent);background:linear-gradient(to left,color-mix(in srgb,var(--accent) 12%,var(--surface)),color-mix(in srgb,var(--primary) 12%,var(--surface)))}
+.core h3{font-size:30px}
+.core p{font-size:21px;color:var(--muted);margin-top:4px}
+.core .chip{font-size:18px}
+.s-stack .features{flex-direction:row;align-items:center;flex-wrap:wrap;margin-top:26px;margin-bottom:22px}
+.s-stack .features .chip{font-size:19px;padding:7px 14px}
+.s-stack .note{font-size:25px;padding:22px 34px}
+.m .s-stack .sh{margin-bottom:22px}
+.m .sys{grid-template-columns:1fr 1fr;gap:12px}
+.m .layer{padding:16px}
+.m .layer .ic{width:40px;height:40px;font-size:21px;border-radius:12px}
+.m .layer h3{font-size:16.5px;margin:12px 0 6px}
+.m .layer p{font-size:13.5px;margin-bottom:12px}
+.m .layer .chip{font-size:12px;padding:4px 8px}
+.m .links{display:none}
+.m .core{flex-direction:column;align-items:flex-start;gap:12px;padding:16px 18px;border-radius:16px;margin-top:2px}
+.m .core h3{font-size:17px}.m .core p{font-size:14px}
+.m .core .chip{font-size:12.5px}
+.m .s-stack .features{flex-direction:column;align-items:flex-start;margin-top:22px}
+.m .s-stack .features .chip{font-size:13px;padding:5px 10px}
+.m .s-stack .note{font-size:15.5px;padding:16px 18px}
 /* ---------- 05 process ---------- */
 .steps{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:40px}
 .track{position:absolute;top:43px;right:45px;left:calc((100% - 112px) / 5 - 45px);height:4px;border-radius:2px;background:linear-gradient(to left,var(--primary),var(--accent),var(--success))}
@@ -458,6 +490,85 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .m .s-team .stat h3{font-size:21px;margin:10px 0 4px}
 .m .s-team .stat p{font-size:15.5px}
 
+
+/* ---------- 06 packages: team size + info ---------- */
+.price .checks li.hasinfo{display:flex;align-items:center;gap:12px;margin-inline-end:-10px;padding-block:3px;padding-inline-end:10px;border-radius:10px;transition:background .2s}
+.price .checks li.hasinfo::before{top:7px}
+.price .checks li.hasinfo > span{flex:1}
+.price .checks li.hasinfo:hover{background:color-mix(in srgb,var(--primary) 10%,transparent)}
+.info{position:static;flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--muted) 55%,transparent);background:none;color:var(--muted);font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:700;font-size:17px;line-height:1;cursor:pointer;display:grid;place-items:center;transition:color .2s,border-color .2s,background .2s}
+.info::after{content:"";position:absolute;inset:0}
+li.hasinfo:hover .info,.info:focus-visible{color:#fff;background:var(--primary);border-color:var(--primary)}
+.pfoot{align-items:flex-end}
+.pval b{display:block;font-family:Inter;font-weight:800;font-size:58px;line-height:1;letter-spacing:-.02em;color:var(--text);direction:ltr;text-align:right}
+.pval span{display:block;font-size:21px;color:var(--muted);margin-top:8px}
+.price.hot .pval b{color:var(--primary)}
+.pfoot{justify-content:flex-start}
+.s-pkg .sh{margin-bottom:38px}
+.s-pkg .price{padding:34px 36px 30px}
+.s-pkg .tagline{margin:6px 0 20px}
+.s-pkg .price .checks{gap:7px}
+.s-pkg .price .checks li{font-size:23px}
+.s-pkg .price .checks{margin-bottom:20px}
+
+/* ---------- ask-before-you-pay ---------- */
+.asks{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.ask{display:flex;flex-direction:column;padding:34px 36px}
+.ask h3{font-size:30px;line-height:1.45;font-weight:600}
+.ans{display:flex;gap:14px;align-items:flex-start;margin-top:auto;padding-top:22px;border-top:1px dashed var(--line);font-size:23px;line-height:1.55;color:var(--muted)}
+.ans .ico{font-size:30px;color:var(--success);stroke-width:2.4;margin-top:1px}
+.ans b{color:var(--text);font-weight:600}
+.ask h3 + .ans{margin-top:22px}
+
+/* ---------- info sheet ---------- */
+.sheet{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:24px}
+.sheet[hidden]{display:none}
+.sheet-bg{position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 62%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:fadein .25s ease both}
+.sheet-card{position:relative;width:min(600px,100%);max-height:calc(100svh - 48px);overflow:auto;padding:30px 34px 26px;border-radius:26px;background:var(--surface);border:1px solid var(--line);box-shadow:0 40px 100px -30px rgba(0,0,0,.6);font-size:17px;animation:pop .35s cubic-bezier(.2,.9,.25,1.15) both}
+.sheet-card::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(to left,var(--primary),var(--accent))}
+@keyframes fadein{from{opacity:0}}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.96)}}
+.sheet-top{display:flex;align-items:center;gap:12px}
+.sheet-pkg{padding:5px 12px;border-radius:9px;font-weight:800;font-size:13px;letter-spacing:.12em;color:var(--primary);background:color-mix(in srgb,var(--primary) 14%,transparent)}
+.sheet-pos{font-family:Inter;font-weight:600;font-size:14px;color:var(--muted);direction:ltr}
+.sheet-x{margin-inline-start:auto;width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:none;font-size:22px;line-height:1;cursor:pointer;color:var(--muted)}
+.sheet-x:hover{color:var(--text)}
+.sheet-card h3{font-size:28px;line-height:1.35;margin:22px 0 10px}
+.sheet-desc{font-size:18px;line-height:1.7;color:var(--muted)}
+.sheet-card .checks{margin-top:20px;gap:11px}
+.sheet-card .checks li{font-size:17px;padding-inline-start:34px}
+.sheet-card .checks li::before{width:23px;height:23px;top:1px;border-radius:7px;background-size:14px}
+.sheet-why{display:flex;gap:12px;margin-top:22px;padding:14px 18px;border-radius:14px;background:color-mix(in srgb,var(--accent) 10%,transparent);border:1px solid color-mix(in srgb,var(--accent) 28%,transparent);font-size:16px;line-height:1.6}
+.sheet-why[hidden]{display:none}
+.sheet-why .ico{font-size:22px;color:var(--accent);margin-top:1px}
+.sheet-nav{display:flex;gap:10px;margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}
+.sheet-nav button{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:46px;border-radius:13px;border:1px solid var(--line);background:none;font-size:16px;font-weight:600;cursor:pointer}
+.sheet-nav button:hover:not(:disabled){border-color:var(--primary)}
+.sheet-nav button:disabled{opacity:.35;cursor:default}
+.sheet-nav .ico{font-size:18px}
+.no-anim .sheet-bg,.no-anim .sheet-card{animation:none}
+@media (prefers-reduced-motion:reduce){.sheet-bg,.sheet-card{animation:none}}
+@media (max-width:640px){
+  .sheet{place-items:end stretch;padding:0}
+  .sheet-card{width:100%;max-height:86svh;border-radius:24px 24px 0 0;padding:26px 20px calc(18px + env(safe-area-inset-bottom,0px));animation-name:up}
+  @keyframes up{from{transform:translateY(100%)}}
+  .sheet-card h3{font-size:23px}
+}
+
+/* mobile: packages + asks */
+.m .s-pkg .price .checks{gap:6px}
+.m .s-pkg .price .checks li{font-size:15.5px}
+.m .price .checks li.hasinfo::before{top:4px}
+.m .info{width:26px;height:26px;font-size:14px}
+.m .pval b{font-size:36px}
+.m .pval span{font-size:13.5px;margin-top:5px}
+.m .asks{grid-template-columns:1fr;gap:12px}
+.m .ask{padding:20px}
+.m .ask h3{font-size:18px}
+.m .ans{font-size:15px;gap:10px;padding-top:14px}
+.m .ask h3 + .ans{margin-top:14px}
+.m .ans .ico{font-size:21px}
+
 /* ---------- print ---------- */
 @page{size:1920px 1080px;margin:0}
 @media print{
@@ -465,7 +576,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
   .stage{position:static;transform:none!important;width:1920px;height:auto;overflow:visible}
   .slide{position:relative;opacity:1!important;visibility:visible!important;width:1920px;height:1080px;break-after:page;page-break-after:always;transition:none}
   .slide *{animation:none!important}
-  .corner,.tweaks,.navbtns,.progress{display:none!important}
+  .corner,.tweaks,.navbtns,.progress,.sheet,.info{display:none!important}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 </style>
@@ -490,6 +601,10 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
   <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
   <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
   <symbol id="i-next" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.8"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M6.5 6.5h.01M9 6.5h.01"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
   <symbol id="i-prev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
 </svg>
 
@@ -524,7 +639,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
       <div class="pc-head"><span class="ic"><svg class="ico"><use href="#i-clock"/></svg></span><span class="num">01</span></div>
       <h3>الميعاد</h3>
       <p class="prob">الشغل يتأخر، وميعاد التسليم يقرّب والدكتور مستني.</p>
-      <div class="sol"><small>وإحنا بنحلها إزاي؟</small><p>خطة واضحة + تحديثات أسبوعية + مواعيد تسليم محددة.</p></div>
+      <div class="sol"><small>وإحنا بنحلها إزاي؟</small><p>خطة واضحة + جروب للتيم بكل جديد + ميتنج مع نهاية كل مرحلة.</p></div>
     </article>
     <article class="card prob-card a">
       <div class="pc-head"><span class="ic"><svg class="ico"><use href="#i-wallet"/></svg></span><span class="num">02</span></div>
@@ -549,7 +664,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
     <p class="shs a">مش كود وخلاص — مشروع كامل جاهز للتسليم والمناقشة</p>
   </header>
   <div class="grid4">
-    <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-phone"/></svg></span><h3>التطبيق</h3><p>تطبيق <span class="en">Mobile</span> أو <span class="en">Web</span> شغال ومتجرّب، ومعاه الـ <span class="en">Backend</span> وقاعدة البيانات حسب احتياج المشروع.</p></article>
+    <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-phone"/></svg></span><h3>السيستم</h3><p><span class="en">Mobile</span> أو <span class="en">Web</span> أو الاتنين، شغال ومتجرّب، ومعاه الـ<span class="en">Backend</span> وقاعدة البيانات ولوحة التحكم حسب المشروع.</p></article>
     <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-code"/></svg></span><h3>السورس كود</h3><p>الكود على <span class="en">GitHub</span> باسم التيم، منظم، ومشروح، ومعاه خطوات التشغيل.</p></article>
     <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-doc"/></svg></span><h3>التوثيق</h3><p><span class="en">PDF Documentation</span> من المقدمة للخاتمة، مع الـ <span class="en">Diagrams</span> وعلى قالب الكلية إذا كان متاحًا.</p></article>
     <article class="card dcard a"><span class="ic"><svg class="ico"><use href="#i-slides"/></svg></span><h3>البريزنتيشن</h3><p>عرض المناقشة جاهز ومنظم، ومعاه <span class="en">Demo Video</span> احتياطي.</p></article>
@@ -569,22 +684,22 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 <!-- 04 Stack -->
 <section class="slide s-stack" data-name="Stack">
   <header class="sh">
-    <h2 class="a">بنشتغل بإيه؟</h2>
-    <p class="shs a"><span class="en">Technology Stack</span> حسب متطلبات مشروعك</p>
+    <h2 class="a">بنبني سيستم كامل، مش تراك واحد</h2>
+    <p class="shs a">مشروع <span class="en">CS</span> أو <span class="en">Software</span>؟ <span class="en">Mobile</span> بس، <span class="en">Web</span> بس، أو كل ده مع بعض — بنبني اللي مشروعكم محتاجه.</p>
   </header>
-  <p class="intro a">مش بنفرض <span class="en">Technology</span> لمجرد إنها مشهورة. الدكتور طالب إيه؟ المشروع محتاج إيه؟ الوقت المتاح قد إيه؟ وبناءً عليهم بنختار الأنسب.</p>
-  <div class="grid3">
-    <article class="card tcard a"><div class="tech">Flutter</div><span class="tech-tag">Android + iOS</span><p><span class="en">Android + iOS</span> من <span class="en">Codebase</span> واحد. مناسب جدًا لمشاريع الـ<span class="en">Mobile</span> اللي محتاجة تنفيذ سريع وواجهة حديثة.</p></article>
-    <article class="card tcard a"><div class="tech">Web</div><span class="tech-tag">JavaScript + React + Node.js</span><p>مناسب للـ<span class="en">Web Apps</span>، <span class="en">Dashboards</span>، وأنظمة الإدارة.</p></article>
-    <article class="card tcard a"><div class="tech">Android Native</div><span class="tech-tag">Java</span><p>للمشاريع اللي الدكتور أو متطلبات الكلية فارضة <span class="en">Native Android</span>.</p></article>
+  <div class="sys">
+    <article class="card layer a"><span class="ic"><svg class="ico"><use href="#i-phone"/></svg></span><h3><span class="en">Mobile App</span></h3><p>تطبيق <span class="en">Android</span> و<span class="en">iOS</span> للمستخدم: حسابات، إشعارات، خرائط، دفع أونلاين.</p><div class="chips en"><span class="chip">Flutter</span><span class="chip">Java / Kotlin</span></div></article>
+    <article class="card layer a"><span class="ic"><svg class="ico"><use href="#i-web"/></svg></span><h3><span class="en">Web App</span></h3><p>موقع أو منصة كاملة تشتغل من أي متصفح، على الموبايل واللابتوب.</p><div class="chips en"><span class="chip">React</span><span class="chip">HTML / CSS / JS</span></div></article>
+    <article class="card layer a"><span class="ic"><svg class="ico"><use href="#i-chart"/></svg></span><h3><span class="en">Admin Dashboard</span></h3><p>لوحة تحكم لصاحب السيستم: المستخدمين، الطلبات، التقارير والإحصائيات.</p><div class="chips en"><span class="chip">Roles</span><span class="chip">Reports</span><span class="chip">Charts</span></div></article>
+    <article class="card layer a"><span class="ic"><svg class="ico"><use href="#i-spark"/></svg></span><h3><span class="en">AI Features</span></h3><p><span class="en">Chatbot</span>، توصيات، تحليل صور أو نصوص — لو فكرة المشروع محتاجاها.</p><div class="chips en"><span class="chip">Python</span><span class="chip">ML Models</span><span class="chip">AI APIs</span></div></article>
+    <div class="links" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="core a"><div><h3><span class="en">Backend, APIs &amp; Database</span></h3><p>القلب اللي بيربط كل أجزاء السيستم ببعض</p></div><div class="chips en"><span class="chip">Node.js</span><span class="chip">REST APIs</span><span class="chip">Firebase</span><span class="chip">MySQL</span><span class="chip">MongoDB</span></div></div>
   </div>
   <div class="features a">
-    <span class="flabel"><span class="en">Features</span> إضافية حسب المشروع:</span>
-    <div class="chips en" style="direction:rtl">
-      <span class="chip">Artificial Intelligence</span><span class="chip">Maps &amp; Tracking</span><span class="chip">Online Payments</span><span class="chip">Push Notifications</span><span class="chip">Admin Dashboard</span><span class="chip">Backend &amp; Database</span>
-    </div>
+    <span class="flabel">أمثلة لسيستمات بنبنيها:</span>
+    <div class="chips"><span class="chip">متجر إلكتروني</span><span class="chip">حجز مواعيد وعيادات</span><span class="chip">توصيل وتتبع على الخريطة</span><span class="chip">منصة تعليمية</span><span class="chip">إدارة مدارس وجامعات</span><span class="chip">شات وسوشيال</span><span class="chip">سيستم ذكاء اصطناعي</span></div>
   </div>
-  <div class="note a"><span>لو عندكم <span class="en">Technology</span> أو <span class="en">Language</span> مفروضة من الدكتور، قولولنا من أول الاستشارة.</span></div>
+  <div class="note a"><span>الدكتور فارض <span class="en">Technology</span> أو لغة معينة؟ قولولنا من أول الاستشارة، وبنختار الأنسب لمشروعكم.</span></div>
 </section>
 
 <!-- 05 Process -->
@@ -599,45 +714,41 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
     <div class="step a"><div class="circ">1</div><h3>تكلمنا</h3><p>ابعت لنا على واتساب واحكيلنا:</p><div class="chips"><span class="chip">فكرة المشروع</span><span class="chip">عدد أفراد التيم</span><span class="chip">متطلبات الدكتور</span><span class="chip">موعد التسليم</span></div></div>
     <div class="step a"><div class="circ">2</div><h3>استشارة مجانية</h3><p><span class="en">15</span> دقيقة نفهم فيها المشروع، ونحدد الـ<span class="en">Features</span> الأساسية، ونقترح الشكل المناسب للتنفيذ.</p></div>
     <div class="step a"><div class="circ">3</div><h3>عرض مكتوب</h3><p>قبل أي دفع، تستلم عرض واضح يشمل:</p><div class="chips"><span class="chip">الـ<span class="en">Features</span></span><span class="chip">مراحل التنفيذ</span><span class="chip">مواعيد التسليم</span><span class="chip">السعر</span><span class="chip">ما يشمله كل <span class="en">Package</span></span></div></div>
-    <div class="step a"><div class="circ">4</div><h3>التنفيذ</h3><p>الشغل بيتبني على مراحل، ومع كل أسبوع يوصلكم <span class="en">Update</span> بصور أو فيديو قصير عشان تفضلوا عارفين المشروع وصل لفين.</p></div>
+    <div class="step a"><div class="circ">4</div><h3>التنفيذ</h3><p>الشغل بيتبني على مراحل. كل جديد بيوصلكم على جروب التيم، ومع نهاية كل مرحلة ميتنج أونلاين نعرض فيه اللي خلص.</p></div>
     <div class="step a"><div class="circ">5</div><h3>التسليم والشرح</h3><p>تستلموا المشروع كاملًا، ونشرحلكم الأجزاء المهمة، ونجهزكم للمناقشة حسب الباقة المختارة.</p></div>
   </div>
   <div class="note a">من أول رسالة لحد يوم المناقشة: أنت عارف إحنا فين، وإيه اللي جاي.</div>
 </section>
 
-<!-- 06 Packages -->
-<section class="slide" data-name="Packages">
-  <div class="sh sh-row">
-    <header>
-      <h2 class="a">اختار الباقة المناسبة لتيمك</h2>
-      <p class="shs a">السعر للتيم كله — مش للفرد</p>
-    </header>
-    <div class="help a"><b>مش عارف تختار؟</b>الاستشارة المجانية نحدد فيها احتياجكم قبل ما تختاروا الباقة.</div>
-  </div>
-  <div class="grid3 prices">
-    <article class="card price a">
-      <div class="tier">BASIC</div>
-      <p class="tagline">لو محتاجين التطبيق فقط</p>
-      <ul class="checks"><li>التطبيق + السورس كود</li><li>طريقة التشغيل</li><li>جلسة شرح واحدة</li><li>جولة تعديل واحدة</li></ul>
-      <div class="pfoot">السعر<b>يُعلن قريبًا</b></div>
-    </article>
-    <article class="card price hot a">
-      <span class="badge-hot">★ الأكثر طلبًا</span>
-      <div class="tier">COMPLETE</div>
-      <p class="tagline">المشروع كامل للتسليم</p>
-      <ul class="checks"><li>كل ما في <span class="en">Basic</span></li><li><span class="en">Documentation PDF</span> كامل</li><li><span class="en">Presentation</span> للمناقشة</li><li>جلستان شرح</li><li>جولتا تعديل</li></ul>
-      <div class="pfoot">السعر<b>يُعلن قريبًا</b></div>
-    </article>
-    <article class="card price a">
-      <div class="tier">UNTIL DEFENSE</div>
-      <p class="tagline">من أول المشروع لحد المناقشة</p>
-      <ul class="checks"><li>كل ما في <span class="en">Complete</span></li><li><span class="en">Demo Video</span></li><li>تعديلات الدكتور لحد المناقشة</li><li>بروفة مناقشة</li><li>بنك أسئلة متوقعة</li><li>أولوية في الرد</li></ul>
-      <div class="pfoot">السعر<b>يُعلن قريبًا</b></div>
-    </article>
+<!-- 06 Ask before you pay -->
+<section class="slide" data-name="Compare">
+  <header class="sh">
+    <h2 class="a">قبل ما تدفع لأي حد، اسأله الأسئلة دي</h2>
+    <p class="shs a">الأسعار في السوق قريبة من بعض — الفرق الحقيقي في اللي بتستلمه</p>
+  </header>
+  <div class="asks">
+    <article class="card ask a"><h3>«هستلم كود بس، ولا <span class="en">Documentation</span> وبريزنتيشن كمان؟»</h3><p class="ans"><svg class="ico"><use href="#i-check"/></svg><span><b>الاتنين</b> من باقة <span class="en">Complete</span>، والـ<span class="en">Documentation</span> على قالب الكلية.</span></p></article>
+    <article class="card ask a"><h3>«هدفع المبلغ كله قبل ما أشوف أي حاجة؟»</h3><p class="ans"><svg class="ico"><use href="#i-check"/></svg><span><b>لأ.</b> <span class="en">30%</span> حجز، والباقي بعد ما تجرّب الديمو وبعد التسليم. ولو الديمو اتأخر، العربون يرجع.</span></p></article>
+    <article class="card ask a"><h3>«لازم أنزل مكان كل أسبوع عشان أتابع؟»</h3><p class="ans"><svg class="ico"><use href="#i-check"/></svg><span><b>لأ.</b> جروب خاص لتيمكم بكل جديد أول بأول، وميتنج أونلاين مع نهاية كل مرحلة — وأنتم في بيتكم.</span></p></article>
+    <article class="card ask a"><h3>«المشروع ده اتعمل لتيم تاني قبل كده؟»</h3><p class="ans"><svg class="ico"><use href="#i-check"/></svg><span><b>مش بنكرره.</b> مفيش مشروعين زي بعض لتيمين في نفس الجامعة.</span></p></article>
+    <article class="card ask a"><h3>«لو الدكتور طلب تعديل قبل المناقشة بأسبوع؟»</h3><p class="ans"><svg class="ico"><use href="#i-check"/></svg><span>باقة <span class="en">Until Defense</span> بتغطي <b>تعديلات الدكتور لحد يوم المناقشة</b>.</span></p></article>
+    <article class="card ask a"><h3>«حد بيختبر المشروع قبل ما يتسلّم؟»</h3><p class="ans"><svg class="ico"><use href="#i-check"/></svg><span><b>كل مشروع بيعدّي على <span class="en">QA</span></b> قبل التسليم — عشان ما يقعش منكم قدام اللجنة.</span></p></article>
   </div>
 </section>
 
-<!-- 07 Payment -->
+<!-- 07 Packages (cards are rendered from PACKAGES in the script below) -->
+<section class="slide s-pkg" data-name="Packages">
+  <div class="sh sh-row">
+    <header>
+      <h2 class="a">اختار الباقة المناسبة لتيمك</h2>
+      <p class="shs a">سعر ثابت للمشروع كله، مهما كان عدد التيم — اضغط على أي بند تشوف تفاصيله</p>
+    </header>
+    <div class="help a"><b>مش عارف تختار؟</b>الاستشارة المجانية نحدد فيها احتياجكم قبل ما تختاروا الباقة.</div>
+  </div>
+  <div class="grid3 prices" id="prices"></div>
+</section>
+
+<!-- 08 Payment -->
 <section class="slide" data-name="Payment">
   <header class="sh">
     <h2 class="a">بتدفع على مراحل</h2>
@@ -697,8 +808,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
     <article class="card q a"><h3>«إحنا لسه ماعندناش فكرة. ينفع؟»</h3><p>أيوه. ده جزء من الاستشارة. بنفهم اهتماماتكم ومتطلبات الدكتور، ونقترح أفكار قابلة للتنفيذ حسب الوقت والـ<span class="en">Technology</span> المطلوبة.</p></article>
     <article class="card q a"><h3>«لو الدكتور طلب تعديل في النص؟»</h3><p>كل باقة فيها جولات تعديل محددة، وباقة <span class="en">Until Defense</span> تشمل تعديلات الدكتور حتى يوم المناقشة ضمن نطاق المشروع المتفق عليه.</p></article>
     <article class="card q a"><h3>«هفهم المشروع فعلًا؟»</h3><p>دي مش إضافة جانبية — دي جزء أساسي من الخدمة. بنشرح لكل عضو الجزء المسؤول عنه، وليه اتعمل بالطريقة دي، ونعمل بروفة مناقشة بأسئلة تقنية متوقعة.</p></article>
-    <article class="card q a"><h3>«هعرف الشغل ماشي فين؟»</h3><p>أيوه. بيوصلكم تحديث أسبوعي بصور أو فيديو قصير على جروب التيم.</p></article>
-    <article class="card q span a"><h3>«الدكتور فارض لغة أو <span class="en">Technology</span> معينة؟»</h3><p>قولولنا في الاستشارة. بنشتغل حاليًا على: <span class="en">Flutter · Web · Android Native</span>. ولو طلبكم خارج النطاق ده، هنقولكم بصراحة قبل ما نبدأ.</p></article>
+    <article class="card q a"><h3>«هعرف الشغل ماشي فين؟ ولازم أنزل مكان أتابع؟»</h3><p>أيوه. كل تيم ليه جروب خاص بيوصله عليه كل جديد بصور أو فيديو، ومع نهاية كل مرحلة ميتنج أونلاين — في كل الباقات.</p></article>
+    <article class="card q span a"><h3>«الدكتور فارض لغة أو <span class="en">Technology</span> معينة؟»</h3><p>قولولنا في الاستشارة. بنبني <span class="en">Mobile</span> و<span class="en">Web</span> و<span class="en">Backend</span> و<span class="en">Dashboards</span> وسيستمات <span class="en">AI</span>. ولو طلبكم خارج اللي بنعمله، هنقولكم بصراحة قبل ما نبدأ.</p></article>
   </div>
 </section>
 
@@ -752,6 +863,18 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
   <button type="button" class="tbtn" id="printBtn">طباعة / حفظ كـ PDF</button>
   <p class="thint">← التالي · → السابق · <b class="en">T</b> الثيم · <b class="en">F</b> ملء الشاشة</p>
 </div>
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-bg" data-close></div>
+  <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1">
+    <div class="sheet-top"><span class="sheet-pkg en" id="sheetPkg"></span><span class="sheet-pos" id="sheetPos"></span><button type="button" class="sheet-x" data-close aria-label="إغلاق">×</button></div>
+    <h3 id="sheetTitle"></h3>
+    <p class="sheet-desc" id="sheetDesc"></p>
+    <ul class="checks" id="sheetList"></ul>
+    <div class="sheet-why" id="sheetWhy"><svg class="ico"><use href="#i-bulb"/></svg><span></span></div>
+    <div class="sheet-nav"><button type="button" id="sheetPrev"><svg class="ico"><use href="#i-prev"/></svg>البند السابق</button><button type="button" id="sheetNext">البند التالي<svg class="ico"><use href="#i-next"/></svg></button></div>
+  </div>
+</div>
+
 <nav class="navbtns" aria-label="التنقل">
   <button type="button" id="prevBtn" aria-label="السابق"><svg class="ico"><use href="#i-prev"/></svg></button>
   <button type="button" id="nextBtn" aria-label="التالي"><svg class="ico"><use href="#i-next"/></svg></button>
@@ -760,6 +883,68 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 <script>
 (function(){
   var root=document.documentElement, stage=document.getElementById('stage');
+
+  /* ================= PACKAGES =================
+     الأسعار والتفاصيل كلها هنا — غيّر price أو أي نص وهيتحدّث في الصفحة.
+     price: سعر المشروع كله بالجنيه (ثابت مهما كان عدد التيم). */
+  var PACKAGES=[
+    {id:'basic',tier:'BASIC',tagline:'السيستم شغال ومتسلّم',price:7000,items:[
+      {t:'السيستم + السورس كود',d:'سيستم شغال ومتجرّب بكل الـ<span class="en">Features</span> اللي اتفقنا عليها في العرض المكتوب.',inc:['<span class="en">Mobile</span> أو <span class="en">Web</span> أو الاتنين، حسب المشروع','<span class="en">Backend</span> وقاعدة بيانات و<span class="en">Admin Dashboard</span> لو المشروع محتاجهم','الكود على <span class="en">GitHub</span> باسم التيم ومنظم','بيعدّي على <span class="en">QA</span> قبل ما يتسلّم']},
+      {t:'نسخة جاهزة للتجربة',d:'تجرّبوا السيستم وتورّوه للدكتور من أي جهاز، من غير ما تشغّلوا ولا سطر كود.',inc:['رابط أونلاين للـ<span class="en">Web</span>','ملف <span class="en">APK</span> يتنزّل على أي موبايل <span class="en">Android</span>','حسابات تجربة جاهزة'],why:'الدكتور يقدر يجرّب المشروع بنفسه قبل المناقشة — ودي بتفرق معاه.'},
+      {t:'طريقة التشغيل',d:'خطوات مكتوبة تشغّلوا بيها المشروع على أي لابتوب — حتى لو دي أول مرة تفتحوا الكود.',inc:['ملف <span class="en">README</span> خطوة بخطوة','البرامج والإصدارات المطلوبة','حلول المشاكل الشائعة وقت التشغيل']},
+      {t:'جروب خاص للتيم + ميتنج كل مرحلة',d:'جروب واتساب لتيمكم بس، كل جديد في المشروع بيوصلكم عليه أول بأول. ومع نهاية كل مرحلة ميتنج أونلاين نعرض فيه اللي خلص ونتفق على اللي جاي.',inc:['مرحلة 1: الفكرة والمتطلبات','مرحلة 2: تصميم الشاشات وقاعدة البيانات','مرحلة 3: التنفيذ والديمو','مرحلة 4: التسليم النهائي'],why:'متابعة كاملة وأنتم في بيتكم — مش لازم تنزلوا سنتر كل أسبوع.'},
+      {t:'جلسة شرح واحدة',d:'جلسة أونلاين للتيم كله، بنمشي فيها على المشروع من الشاشة لحد قاعدة البيانات.',inc:['المشروع متقسم إزاي ومعمول بإيه','ليه اخترنا كل <span class="en">Technology</span>','كل فرد مسؤول عن أنهي جزء','الجلسة بتتسجّل وتفضل معاكم']},
+      {t:'جولة تعديل واحدة',d:'بعد ما تجرّبوا الديمو، تجمعوا ملاحظاتكم وملاحظات الدكتور في رسالة واحدة وننفذها كلها.',inc:['تعديلات في التصميم أو النصوص أو طريقة عمل الشاشات','ضمن الـ<span class="en">Features</span> المتفق عليها','أي <span class="en">Feature</span> جديدة بتتسعّر لوحدها قبل التنفيذ'],why:'اجمعوا كل الملاحظات مرة واحدة — كده الجولة بتغطي كل حاجة.'}
+    ]},
+    {id:'complete',tier:'COMPLETE',tagline:'المشروع كامل للتسليم',price:9000,hot:true,items:[
+      {t:'كل ما في <span class="en">Basic</span>',d:'كل بنود <span class="en">Basic</span> موجودة هنا، بعدد جلسات وتعديلات أكبر.',inc:['السيستم + السورس كود على <span class="en">GitHub</span>','نسخة جاهزة للتجربة وطريقة التشغيل','جروب خاص للتيم + ميتنج كل مرحلة']},
+      {t:'اعتماد شكل الشاشات قبل التنفيذ',d:'بنصمم شاشات السيستم الأول، تشوفوها وتعدّلوا عليها، وبعدها نبدأ كود.',inc:['تصميم الشاشات الأساسية','بتتحط في الـ<span class="en">Documentation</span> والبريزنتيشن','تعديلاتكم على التصميم قبل التنفيذ'],why:'كده مفيش مفاجآت في الشكل بعد ما الكود يخلص.'},
+      {t:'<span class="en">Documentation PDF</span> كامل',d:'الكتاب اللي بيتسلّم للكلية من المقدمة للخاتمة، على قالب الكلية لو متاح.',inc:['<span class="en">Introduction &amp; Problem Statement</span>','الأنظمة المشابهة <span class="en">(Related Work)</span>','<span class="en">Functional &amp; Non-Functional Requirements</span>','<span class="en">Use Case, ERD, Sequence, Class Diagrams</span>','<span class="en">Implementation &amp; Testing</span>','<span class="en">Conclusion &amp; Future Work</span>']},
+      {t:'<span class="en">Presentation</span> للمناقشة',d:'عرض المناقشة متقسم على أفراد التيم، وكل واحد عارف هيتكلم في أنهي جزء.',inc:['من <span class="en">15</span> لـ<span class="en">20 Slide</span> بتصميم نضيف','تقسيم الكلام على أفراد التيم','<span class="en">Speaker Notes</span> تحت كل <span class="en">Slide</span>','نسخة <span class="en">PDF</span> احتياطي']},
+      {t:'جلستين شرح',d:'الأولى للكود وطريقة بناء المشروع، والتانية للـ<span class="en">Documentation</span> والبريزنتيشن.',inc:['الجلسات بتتسجّل','كل فرد يطلع عارف الجزء بتاعه']},
+      {t:'جولتين تعديل',d:'جولة بعد الديمو، وجولة بعد مراجعة الدكتور للمشروع أو الـ<span class="en">Documentation</span>.',inc:['ضمن الـ<span class="en">Features</span> المتفق عليها','أي <span class="en">Feature</span> جديدة بتتسعّر لوحدها قبل التنفيذ']}
+    ]},
+    {id:'defense',tier:'UNTIL DEFENSE',tagline:'من أول سطر كود لحد يوم المناقشة',price:12000,items:[
+      {t:'كل ما في <span class="en">Complete</span>',d:'كل بنود <span class="en">Complete</span> موجودة هنا، ومعاها متابعة كاملة لحد ما تخرجوا من المناقشة.',inc:['السيستم + السورس كود','<span class="en">Documentation PDF</span> كامل','<span class="en">Presentation</span> للمناقشة','جروب خاص + ميتنج كل مرحلة']},
+      {t:'شرح كل جزء أول بأول',d:'كل جزء بيخلص بنشرحه على الجروب أو في ميتنج قصير، فيوم التسليم مفيش حاجة جديدة عليكم.',inc:['تفهموا الكود وهو بيتبني، مش بعد ما يخلص','كل فرد يتابع الجزء اللي هيتسأل فيه'],why:'دي أكتر حاجة بتفرق يوم المناقشة: إنك فاهم، مش حافظ.'},
+      {t:'<span class="en">Demo Video</span>',d:'فيديو من <span class="en">3</span> لـ<span class="en">5</span> دقايق للمشروع وهو شغال — احتياطي لو النت أو اللابتوب خذلكم يوم المناقشة.',inc:['بصوت أو بكابشن حسب ما تحبوا','جاهز يتعرض من غير أي تشغيل']},
+      {t:'تعديلات الدكتور لحد المناقشة',d:'أي تعديل يطلبه الدكتور في أي مراجعة — في الكود أو الـ<span class="en">Documentation</span> أو البريزنتيشن — بننفذه ونشرحهولكم.',inc:['لحد يوم المناقشة','ضمن نطاق المشروع المتفق عليه']},
+      {t:'بروفة مناقشة',d:'بنلعب دور اللجنة ونسألكم زي يوم المناقشة بالظبط، وبعدها ملاحظات لكل فرد لوحده.',inc:['تدريب على طريقة العرض والتقديم','أسئلة تقنية مفاجئة','نقاط القوة والضعف لكل فرد']},
+      {t:'بنك أسئلة متوقعة',d:'أسئلة اللجنة المتوقعة بإجاباتها، متقسمة على حسب الجزء اللي كل واحد مسؤول عنه.',inc:['أسئلة عن الفكرة والهدف','أسئلة تقنية عن الكود والـ<span class="en">Database</span>','أسئلة الـ<span class="en">Diagrams</span> والـ<span class="en">Documentation</span>']},
+      {t:'أولوية في الرد + دعم يوم المناقشة',d:'ردّ في نفس اليوم طول فترة المشروع، ومتاحين معاكم يوم المناقشة لو حصلت أي مشكلة.',inc:['ردّ في نفس اليوم','متاحين أونلاين يوم المناقشة']}
+    ]}
+  ];
+  var fmt=function(n){return n.toLocaleString('en-US')};
+  var pricesEl=document.getElementById('prices');
+  pricesEl.innerHTML=PACKAGES.map(function(p,pi){
+    var lis=p.items.map(function(it,ii){
+      var plain=it.t.replace(/<[^>]+>/g,'');
+      return '<li class="hasinfo"><span>'+it.t+'</span><button type="button" class="info" data-p="'+pi+'" data-i="'+ii+'" aria-label="تفاصيل: '+plain+'">i</button></li>';
+    }).join('');
+    return '<article class="card price'+(p.hot?' hot':'')+' a">'+(p.hot?'<span class="badge-hot">★ الأكثر طلبًا</span>':'')+
+      '<div class="tier">'+p.tier+'</div><p class="tagline">'+p.tagline+'</p><ul class="checks">'+lis+'</ul>'+
+      '<div class="pfoot"><div class="pval"><b>'+fmt(p.price)+'</b><span>جنيه للمشروع كامل</span></div></div></article>';
+  }).join('');
+  // info sheet
+  var sheet=document.getElementById('sheet'), sheetCard=sheet.querySelector('.sheet-card'), sp=0, si=0, lastFocus=null;
+  function showItem(){
+    var p=PACKAGES[sp], it=p.items[si];
+    document.getElementById('sheetPkg').textContent=p.tier;
+    document.getElementById('sheetPos').textContent=(si+1)+' / '+p.items.length;
+    document.getElementById('sheetTitle').innerHTML=it.t;
+    document.getElementById('sheetDesc').innerHTML=it.d;
+    document.getElementById('sheetList').innerHTML=(it.inc||[]).map(function(x){return '<li>'+x+'</li>'}).join('');
+    var w=document.getElementById('sheetWhy'); w.hidden=!it.why; w.querySelector('span').textContent=it.why||'';
+    document.getElementById('sheetPrev').disabled=si===0;
+    document.getElementById('sheetNext').disabled=si===p.items.length-1;
+  }
+  function openSheet(p,i){sp=p;si=i;lastFocus=document.activeElement;showItem();sheet.hidden=false;document.body.style.overflow='hidden';sheetCard.focus()}
+  function closeSheet(){if(sheet.hidden)return;sheet.hidden=true;document.body.style.overflow='';if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+  function stepSheet(d){var n=si+d;if(n<0||n>=PACKAGES[sp].items.length)return;si=n;showItem()}
+  pricesEl.addEventListener('click',function(e){var b=e.target.closest('.info');if(b)openSheet(+b.getAttribute('data-p'),+b.getAttribute('data-i'))});
+  sheet.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',closeSheet)});
+  document.getElementById('sheetPrev').onclick=function(){stepSheet(-1)};
+  document.getElementById('sheetNext').onclick=function(){stepSheet(1)};
   var slides=[].slice.call(document.querySelectorAll('.slide')), total=slides.length, cur=0;
   var pad=function(n){return (n<10?'0':'')+n};
 
@@ -858,6 +1043,13 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
     if(e.target.closest&&e.target.closest('input,textarea,select'))return;
     if(e.ctrlKey||e.metaKey||e.altKey)return;
     var k=e.key, c=e.code;
+    if(!sheet.hidden){
+      if(k==='Escape')closeSheet();
+      else if(k==='ArrowLeft'){e.preventDefault();stepSheet(1)}
+      else if(k==='ArrowRight'){e.preventDefault();stepSheet(-1)}
+      else if(k==='Tab'){var f=[].slice.call(sheetCard.querySelectorAll('button:not(:disabled)'));if(f.length){var a=f.indexOf(document.activeElement);if(e.shiftKey&&a<=0){e.preventDefault();f[f.length-1].focus()}else if(!e.shiftKey&&a===f.length-1){e.preventDefault();f[0].focus()}}}
+      return;
+    }
     if(isM){if(c==='KeyT')toggleTheme();else if(k==='Escape')openTweaks(false);return}
     if(k==='ArrowLeft'||k==='ArrowDown'||k==='PageDown'||c==='Space'){e.preventDefault();go(cur+1)}
     else if(k==='ArrowRight'||k==='ArrowUp'||k==='PageUp'){e.preventDefault();go(cur-1)}
@@ -872,7 +1064,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
   var sx=null,sy=null;
   document.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
   document.addEventListener('touchend',function(e){
-    if(sx===null||isM){sx=null;return}
+    if(sx===null||isM||!sheet.hidden){sx=null;return}
     var dx=e.changedTouches[0].clientX-sx, dy=e.changedTouches[0].clientY-sy;
     if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){go(dx>0?cur+1:cur-1)}
     sx=null;
